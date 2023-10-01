@@ -1,0 +1,19 @@
+.section {
+    width: 100%;
+    padding: 10% 10%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.section .left {
+    width: 60%;
+    font-size: 1.5rem;
+}
+.section .right {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 30%;
+    font-size: 1.3rem;
+}

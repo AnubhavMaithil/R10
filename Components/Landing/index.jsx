@@ -19,9 +19,9 @@ const index = () => {
         gsap.to(slider.current, {
             scrollTrigger: {
                 trigger: document.documentElement,
-                start: 0,
+                scrub: 0.45,
+                start: "top top",
                 end: window.innerHeight,
-                scrub: 0.25,
                 onUpdate: (e) => {
                     direction = e.direction * -1;
                 },
@@ -39,8 +39,7 @@ const index = () => {
         }
         gsap.set(firstText.current, { xPercent });
         gsap.set(secondText.current, { xPercent });
-
-        xPercent += direction * 0.1;
+        xPercent += direction * 0.05;
         requestAnimationFrame(animate);
     };
 
@@ -59,9 +58,9 @@ const index = () => {
                     height={20}
                     alt="arrow"
                     data-scroll
-                    data-scroll-speed="0.2"
+                    data-scroll-speed="0.4"
                 />
-                <div data-scroll data-scroll-speed="0.6">
+                <div data-scroll data-scroll-speed="0.3">
                     <p>Hello</p>
                     <p>Achii photo hai</p>
                 </div>

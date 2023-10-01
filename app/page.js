@@ -7,6 +7,8 @@ import styles from './page.module.css'
 import LocomotiveScroll from 'locomotive-scroll'
 
 import Landing from '@/Components/Landing'
+import Section from '@/Components/Section'
+import Works from '@/Components/Works'
 import { useEffect } from 'react'
 
 export default function Home() {
@@ -18,7 +20,8 @@ export default function Home() {
   return (
     <div className={styles.main}>
       <Landing />
-      <div className={styles.page2}></div>
+      <Section />
+      <Works />
     </div>
 
   )
